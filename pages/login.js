@@ -4,7 +4,7 @@ import { GoogleLogin } from '@react-oauth/google'
 import { client } from '../LIB/client';
 import jwt_decode from 'jwt-decode';
 import { useRouter } from 'next/router';
-import { urlFor } from '../LIB/client';
+import { urlFor } from '../lib/client';
 import Link from 'next/link';
 import {toast} from 'react-hot-toast'
 
