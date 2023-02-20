@@ -131,11 +131,11 @@ const OrderSummary = () => {
 
     const handleOnline = () => {
 
-        if (okayOrder == true) {
-            
+        if(localAddress){
             handlePay();
             handleCheckout();
-        } else {
+        }
+        else{
             toast.error('"enter correct details')
         }
     }
