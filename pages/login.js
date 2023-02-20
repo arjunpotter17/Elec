@@ -5,8 +5,8 @@ import { client } from '../LIB/client';
 import jwt_decode from 'jwt-decode';
 import { useRouter } from 'next/router';
 import { urlFor } from '../LIB/client';
-
-import {toast} from 'react-hot-toast'
+import Link from 'next/link';
+import Nextimport {toast} from 'react-hot-toast'
 
 
 const Login = ({logo}) => {
