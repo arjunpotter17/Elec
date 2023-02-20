@@ -18,24 +18,29 @@ const Account = () => {
   const [pinCode, setPinCode] = useState('')
 
   const handleSubmit = () =>{
-    const address = line1.concat(line2+' '+city+' '+pinCode+' '+state)
-    client
-  .patch(userDet.sub) // Document ID to patch
-  .set({address: address}, {phone}) // Shallow merge
-  .commit() // Perform the patch and return a promise
-  .then((data) => {
-    console.log(data)
-    localStorage.setItem('localDetails', JSON.stringify({
-      address,
-      phone
-    }))
-    router.push('javascript:history.back()');
-    toast.success('Update Successful')
-    
-  })
-  .catch((err) => {
-    console.error('Oh no, the update failed: ', err.message)
-  })
+    if(line1 == ''|| city=='' || state==''|| phone == '' || pinCode == ''){
+      toast.error('enter all required fields');
+    }
+    else{
+      const address = line1.concat(line2+' '+city+' '+pinCode+' '+state)
+      client
+    .patch(userDet.sub) // Document ID to patch
+    .set({address: address}, {phone}) // Shallow merge
+    .commit() // Perform the patch and return a promise
+    .then((data) => {
+      console.log(data)
+      localStorage.setItem('localDetails', JSON.stringify({
+        address,
+        phone
+      }))
+      router.push('javascript:history.back()');
+      toast.success('Update Successful')
+      
+    })
+    .catch((err) => {
+      console.error('Oh no, the update failed: ', err.message)
+    })
+    }
   }
 
   useEffect(()=>{
