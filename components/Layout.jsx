@@ -8,7 +8,7 @@ const Layout = ({ children,user,setUser,key,setKey }) => {
   return (
     <div className="layout">
       <Head>
-        <title>JS Mastery Store</title>
+        <title>The Elec Store</title>
       </Head>
       <header>
         <Navbar user ={user} key={key} setUser={setUser} setKey={setKey}/>
