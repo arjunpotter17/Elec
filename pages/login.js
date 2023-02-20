@@ -65,7 +65,7 @@ client.createIfNotExists(doc).then(() => {
                                 cookiePolicy="single_host_origin"
                             />
                         </div>
-                        <a href='/' id='guest-link'>Continue as guest</a>
+                        <Link href='/' id='guest-link'>Continue as guest</Link>
                     </div>
                     
                 </div>
