@@ -105,10 +105,11 @@ const OrderSummary = () => {
     }
 
     const handleCash = () =>{
-        if(okayOrder == true){
-            handlePay()
+        if(localAddress || okayOrder== true){
+            handlePay();
             router.push('/success')
-        }else {
+        }
+        else{
             toast.error('"enter correct details')
         }
     }
