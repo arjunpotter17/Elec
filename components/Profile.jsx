@@ -17,6 +17,7 @@ const Profile = ({user, setToggleUser, setUser, setKey }) => {
     setKey(Math.random());
     setToggleUser(false)
     localStorage.removeItem('user')
+    localStorage.removeItem('localDetails')
    
   }
 
