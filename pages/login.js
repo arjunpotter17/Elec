@@ -1,7 +1,7 @@
 import {React} from 'react'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import { GoogleLogin } from '@react-oauth/google'
-import { client } from '../LIB/client';
+import { client } from '../lib/client';
 import jwt_decode from 'jwt-decode';
 import { useRouter } from 'next/router';
 import { urlFor } from '../lib/client';
