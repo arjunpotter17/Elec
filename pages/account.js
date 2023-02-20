@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 
  
 
-const account = () => {
+const Account = () => {
 
   const router = useRouter()
   const [userDet, setUserDet] = useState();
@@ -79,6 +79,6 @@ const account = () => {
   )
 }
 
-export default account
+export default Account
 
 
