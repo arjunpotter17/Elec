@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react'
+import {React, useEffect, useState} from 'react';
 import { client } from '@/LIB/client';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/router';
