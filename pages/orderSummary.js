@@ -198,7 +198,7 @@ const OrderSummary = () => {
                 {users?.map(user => {
                     if (user.userId == temp) {
                         return (
-                            <div style={{ fontWeight: 'bold' }}>
+                            <div key={user.userId} style={{ fontWeight: 'bold' }}>
                                 <p>Name: {user.userName}</p>
                                 <p>Phone: {localAddress? localAddress.phone:'Please update phone'}</p>
                                 <p>Email: {user.email}</p>
