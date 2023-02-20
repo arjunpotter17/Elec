@@ -6,7 +6,7 @@ import jwt_decode from 'jwt-decode';
 import { useRouter } from 'next/router';
 import { urlFor } from '../LIB/client';
 import Link from 'next/link';
-import Nextimport {toast} from 'react-hot-toast'
+import {toast} from 'react-hot-toast'
 
 
 const Login = ({logo}) => {
