@@ -163,7 +163,7 @@ width: 100%;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  z-index:10000 !important;
+  z-index:9999 !important;
 }
 
 .hero-banner-container h3{
@@ -286,7 +286,7 @@ text-align: end;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 100;
+  z-index: 10000;
   /* will-change: transform; */
   transition: all 1s ease-in-out;
 
