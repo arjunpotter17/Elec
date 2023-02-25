@@ -163,7 +163,7 @@ width: 100%;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  z-index:9999 !important;
+  z-index:1 !important;
 }
 
 .hero-banner-container h3{
@@ -296,6 +296,7 @@ text-align: end;
   width: 600px;
   background-color: white;
   float: right;
+  z-index: 1000000 !important;
   padding: 40px 10px;
   position: relative;
   overflow-x: hidden;
@@ -832,6 +833,17 @@ margin-top: 160px;
   cursor: pointer;
 }
 
+.home-btn{
+  position: fixed;
+  bottom: 2rem; 
+  right: 2.75rem; 
+  filter: grayscale(100%); 
+}
+
+.home-btn:hover{
+  filter: grayscale(0%)
+}
+
 @media screen and (max-width:1050px){
   .footer-banner-image{
     top:-10%;
@@ -1016,6 +1028,12 @@ margin-top: 160px;
 .btn-container{
   width: 300px;
   margin: auto;
+}
+
+.home-btn{
+  right: 1.25rem; 
+bottom: 4rem; 
+filter: grayscale(0%); 
 }
 }
 

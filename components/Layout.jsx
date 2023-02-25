@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-
+import Home from './Home';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -18,7 +18,9 @@ const Layout = ({ children,user,setUser,key,setKey }) => {
       </main>
       <footer>
         <Footer />
+        <Home/>
       </footer>
+      
     </div>
   )
 }
