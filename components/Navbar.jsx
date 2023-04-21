@@ -7,7 +7,7 @@ import Profile from './Profile';
 import { Cart } from './';
 import { useStateContext } from '../context/StateContext';
 
-const Navbar = ({user, key, setUser, setKey}) => {
+const Navbar = ({user,setUser, setKey}) => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
   const [toggleUser, setToggleUser] = useState(false)
 
